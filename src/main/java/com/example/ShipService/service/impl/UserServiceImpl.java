@@ -16,7 +16,7 @@ import java.util.Objects;
 public class UserServiceImpl implements UserService {
     //Создание списка пользователей
     private List<UserInfoResponse> users = new ArrayList<>();
-
+    int x;
     @Override
     public UserInfoResponse createUser(UserInfoRequest request){
 
@@ -33,6 +33,7 @@ public class UserServiceImpl implements UserService {
         // Дополняем список новым пользователем
         users.add(user);
         return user;
+
     }
     @Override
     public UserInfoResponse getUser(Long id, UserInfoRequest request){
