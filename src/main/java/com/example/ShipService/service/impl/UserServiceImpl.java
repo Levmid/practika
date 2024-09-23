@@ -16,7 +16,7 @@ import java.util.Objects;
 public class UserServiceImpl implements UserService {
     //Создание списка пользователей
     private List<UserInfoResponse> users = new ArrayList<>();
-    int x;
+
     @Override
     public UserInfoResponse createUser(UserInfoRequest request){
 
